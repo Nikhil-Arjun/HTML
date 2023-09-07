@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Form Elements</title>
+  </head>
+  <body>
+    <!-- HTML <form> Elements
+      The HTML <form> element can contain one or more of the following form elements:
+
+<input>
+<label>
+<select>
+<textarea>
+<button>
+<fieldset>
+<legend>
+<datalist>
+<output>
+<option>
+<optgroup> -->
+
+<!-- ========= The <input> Element=========== -->
+    <form action="https://httpbin.org/get" method="get">
+      <label for="fname">First Name:</label>
+      <input type="text" name="fname" id="fname" />
+      <br />
+      <input type="submit" value="Submit" />
+      <br>
+      <hr>
+
+<!-- ==========The <select> Element=========== -->
+      <label for="cars">Choose a car:</label>
+        <select name="cars" id="cars" size="2"/>
+        <!-- 1.<option> Elements defines an option that can be selected.
+          2. defult - first-iyem in the drop-down list
+          3. pre-selected option - selected -->
+          <option value="valvo">Volvo</option>
+          <option value="saab">Saab</option>
+          <option value="fiat" selected>Fiat</optio>
+          <option value="Audi">Audi</option>
+        </select>
+        <br>
+        <hr>
+
+        <!-- =====<textArea>======== -->
+          <!-- <textarea> - defines a multi-line input field (a text area): 
+            
+          rows- visible number of lines in a text area.
+        columns - visible width of a text area.-->
+            <textarea name="message" id="message" rows="20" cols="80">Please enter your message:</textarea>
+<br>
+
+            <!-- =====The <button> element -->
+              <button type="button" onclick="alert('Hello world')">Click Me!</button>
+    </form>
+<br>
+<br>
+    <form action="https://httpbin.org/get" method="get">
+      <fieldset >
+        <legend>Personlia:</legend>
+        <label for="fname">First Name:</label>
+        <input type="text" name="fanme" id="fanme" value="Nikhil"> <br>
+        <label for="lname">Last Name:</label>
+        <input type="text" name="lname" id="lname" value="Arjun"> <br> <br>
+        <button type="submit" Value="Submit"> Click and Save!</button>
+      </fieldset>
+    </form>
+    <br>
+    <br>
+    <hr>
+    <h2>The datalist Element</h2>
+
+    <p>The datalist element specifies a list of pre-defined options for an input element.</p>
+
+
+    <form action="/action_page.php">
+      <input list="browsers" name="browser">
+      <datalist id="browsers">
+        <option value="Internet Explorer">
+        <option value="Firefox">
+        <option value="Chrome">
+        <option value="Opera">
+        <option value="Safari">
+      </datalist>
+      <input type="submit">
+    </form>
+
+
+  </body>
+</html>
